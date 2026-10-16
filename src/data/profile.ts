@@ -6,9 +6,9 @@ export const profile = {
   email: 'chris.baum.1995@gmail.com',
   avatar: '/img/profile.png',
   links: [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/christian-baumann-49b041239/' },
     { label: 'GitHub', href: 'https://github.com/chbauman' },
     { label: 'Instagram', href: 'http://instagram.com/festival_chrigi' },
-    { label: 'Facebook', href: 'http://facebook.com/chrigi5.9' },
   ],
   skills: [
     { group: 'Languages', items: ['Python', 'C++/C', 'R', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
@@ -27,3 +27,17 @@ export const education = [
   { org: 'ETH Zürich', logo: '/img/eth.png', url: 'https://ethz.ch/', role: 'Computational Science and Engineering', description: 'Master of Science' },
   { org: 'ETH Zürich', logo: '/img/eth.png', url: 'https://ethz.ch/', role: 'Computational Science and Engineering', description: 'Bachelor of Science' },
 ];
+
+export const projects = [
+  {
+    title: 'Sudoku',
+    description: 'A sudoku web app written in TypeScript, with pencil marks, hypotheses and a solver.',
+    image: '/img/posts/screen_sudoku_broad.png',
+    links: [
+      { label: 'Try it', href: 'https://chbauman.github.io/sudoku-ts/' },
+      { label: 'About the app', href: '/sudoku' },
+    ],
+  },
+];
+
+export const bands: { name: string; role: string; description: string; url?: string }[] = [];
