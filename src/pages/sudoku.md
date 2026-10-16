@@ -1,13 +1,13 @@
 ---
+layout: ../layouts/Prose.astro
 title: TypeScript Sudoku Web-App
-date: 2020-03-25
-summary: My sudoku web-app written in TypeScript
-thumbnail: /img/posts/screen_sudoku_broad.png
+description: My sudoku web-app written in TypeScript
 ---
 
 This post documents my TypeScript sudoku app. It can be accessed and tried out at
 <a href="https://chbauman.github.io/sudoku-ts/">https://chbauman.github.io/sudoku-ts/</a>.
-A screenshot is shown in the image above.
+
+![Screenshot of the sudoku app](/img/posts/screen_sudoku_broad.png)
 
 ### General Usage
 

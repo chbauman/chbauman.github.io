@@ -8,8 +8,8 @@ const fullTitle = title ? `${title} · ${profile.name}` : profile.name;
 const path = Astro.url.pathname;
 const nav = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/bands', label: 'Bands' },
   { href: '/contact', label: 'Contact' },
 ];
 const active = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));

@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { projects } from '../data/profile';
+---
+<Base title="Projects">
+  <h1>Projects</h1>
+  <ul class="cards">
+    {projects.map((p) => (
+      <li class="card">
+        {p.image && <img src={p.image} alt="" class="thumb" loading="lazy" />}
+        <h2>{p.title}</h2>
+        <p>{p.description}</p>
+        <p class="links">{p.links.map((l) => <a href={l.href}>{l.label}</a>)}</p>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { bands } from '../data/profile';
+---
+<Base title="Bands">
+  <h1>Bands</h1>
+  <ul class="cards">
+    {bands.map((b) => (
+      <li class="card band">
+        {b.logo && <img src={b.logo} alt="" width="96" height="96" loading="lazy" style={b.logoBg ? `background:${b.logoBg}` : undefined} />}
+        <div>
+          <h2><a href={b.url}>{b.name}</a></h2>
+          {b.role && <p class="muted">{b.role}</p>}
+          {b.description && <p>{b.description}</p>}
+          <p class="muted">{new URL(b.url).hostname}</p>
+        </div>
+      </li>
+    ))}
+  </ul>
+</Base>

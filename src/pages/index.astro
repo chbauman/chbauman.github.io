@@ -1,34 +1,29 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { profile } from '../data/profile';
-
-const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+import Entry from '../components/Entry.astro';
+import { profile, work, education } from '../data/profile';
 ---
 <Base>
   <section class="hero">
     <img class="avatar" src={profile.avatar} alt={profile.name} width="140" height="148" />
     <div>
       <h1>{profile.name}</h1>
-      <p class="lead">{profile.title}</p>
+      <p class="lead">{profile.title} · {profile.location}</p>
       <p>{profile.bio}</p>
       <p class="links">
-        {profile.links.map((l) => <a href={l.href} rel="me">{l.label}</a>)}
+        {profile.links.map((l) => <a href={l.href} rel={l.href.startsWith("mailto:") ? undefined : "me"}>{l.label}</a>)}
       </p>
     </div>
   </section>
 
-  <section>
-    <h2>Recent posts</h2>
-    <ul class="cards">
-      {posts.map((p) => (
-        <li class="card">
-          <h3><a href={`/blog/${p.id}`}>{p.data.title}</a></h3>
-          <time class="muted" datetime={p.data.date.toISOString()}>{p.data.date.toLocaleDateString('en-GB', { dateStyle: 'long' })}</time>
-          <p>{p.data.summary}</p>
-        </li>
-      ))}
-    </ul>
-    <p><a href="/blog">All posts →</a></p>
-  </section>
+  <h2>Work experience</h2>
+  <ul class="entries">{work.map((e) => <Entry {...e} />)}</ul>
+
+  <h2>Education</h2>
+  <ul class="entries">{education.map((e) => <Entry {...e} />)}</ul>
+
+  <h2>Skills</h2>
+  {profile.skills.map((s) => (
+    <p><strong>{s.group}:</strong> {s.items.join(', ')}</p>
+  ))}
 </Base>
