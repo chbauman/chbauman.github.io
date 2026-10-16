@@ -4,17 +4,14 @@ import { bands } from '../data/profile';
 ---
 <Base title="Bands">
   <h1>Bands</h1>
-  {bands.length === 0 ? (
-    <p class="muted">Coming soon.</p>
-  ) : (
-    <ul class="cards">
-      {bands.map((b) => (
-        <li class="card">
-          <h2>{b.url ? <a href={b.url}>{b.name}</a> : b.name}</h2>
-          <p class="muted">{b.role}</p>
-          <p>{b.description}</p>
-        </li>
-      ))}
-    </ul>
-  )}
+  <ul class="cards">
+    {bands.map((b) => (
+      <li class="card">
+        <h2><a href={b.url}>{b.name}</a></h2>
+        {b.role && <p class="muted">{b.role}</p>}
+        {b.description && <p>{b.description}</p>}
+        <p class="muted">{new URL(b.url).hostname}</p>
+      </li>
+    ))}
+  </ul>
 </Base>

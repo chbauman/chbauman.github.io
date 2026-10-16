@@ -42,4 +42,9 @@ export const projects = [
   },
 ];
 
-export const bands: { name: string; role: string; description: string; url?: string }[] = [];
+export const bands: { name: string; url: string; role?: string; description?: string }[] = [
+  { name: 'Skaprazombie', url: 'https://skaprazombie.ch/' },
+  { name: 'Yono Street Band', url: 'https://yonostreetband.ch/' },
+  { name: 'Bau-Stei', url: 'https://bau-stei.ch/' },
+  { name: 'Artrose', url: 'https://artrose.ch/' },
+];
