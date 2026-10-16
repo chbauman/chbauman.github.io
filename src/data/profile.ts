@@ -9,6 +9,7 @@ export const profile = {
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/christian-baumann-49b041239/' },
     { label: 'GitHub', href: 'https://github.com/chbauman' },
     { label: 'Instagram', href: 'http://instagram.com/festival_chrigi' },
+    { label: 'Email', href: 'mailto:chris.baum.1995@gmail.com' },
   ],
   skills: [
     { group: 'Languages', items: ['Python', 'C++/C', 'R', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
