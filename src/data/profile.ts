@@ -13,6 +13,7 @@ export const profile = {
   ],
   skills: [
     { group: 'Languages', items: ['Python', 'C++/C', 'C#/.NET', 'R', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
+    { group: 'Frameworks', items: ['React', 'Django', 'Tailwind', 'Bootstrap', 'Blazor', 'Android', 'WinUI', 'Windows Forms'] },
     { group: 'Tools', items: ['Git', 'Linux', 'Subversion', 'Jenkins', 'Matlab', 'Mathematica', 'Photoshop', 'Powershell'] },
   ],
   formspree: 'https://formspree.io/f/xpzbwoql',
