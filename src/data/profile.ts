@@ -63,6 +63,16 @@ export const projects = [
     ],
   },
   {
+    title: 'Perler Bead Template Creator',
+    description:
+      'Upload an image and get a printable PDF template with one bead per pixel, for making perler (fuse) bead pictures.',
+    image: '/img/perler-beads.png',
+    links: [
+      { label: 'Try it', href: 'https://perler.chrisbaumann.ch/' },
+      { label: 'Source', href: 'https://github.com/chbauman/perler-beads-template' },
+    ],
+  },
+  {
     title: 'Sudoku Solver & Generator (C++)',
     description:
       'Command-line tools written in modern C++20 to solve sudokus, check whether the solution is unique, and generate puzzles rated by difficulty. Supports other board sizes too.',
