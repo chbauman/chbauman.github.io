@@ -38,7 +38,6 @@ export const projects = [
     image: '/img/posts/screen_sudoku_broad.png',
     links: [
       { label: 'Try it', href: 'https://chbauman.github.io/sudoku-ts/' },
-      { label: 'About the app', href: '/sudoku' },
     ],
   },
 ];
