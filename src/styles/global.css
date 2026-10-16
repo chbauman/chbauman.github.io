@@ -44,7 +44,7 @@ pre { background: var(--surface); border: 1px solid var(--border); border-radius
 .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--fg); border-bottom: 2px solid var(--accent); }
 .site-footer { max-width: var(--max); margin: 0 auto; padding: 2rem 1rem; color: var(--muted); font-size: .9rem; }
 
-.hero { display: flex; flex-wrap: wrap; gap: 1.5rem 2rem; align-items: center; padding: 2rem 0; }
+.hero { display: flex; flex-wrap: wrap; gap: 1.5rem 2rem; align-items: center; padding: 1rem 0 0; }
 .hero h1 { margin: 0; font-size: 2.2rem; }
 .avatar { border-radius: 50%; background: var(--surface); border: 1px solid var(--border); object-fit: cover; }
 .lead { font-size: 1.2rem; color: var(--muted); margin: .25rem 0 .75rem; }

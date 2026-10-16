@@ -12,7 +12,7 @@ export const profile = {
     { label: 'Email', href: 'mailto:chris.baum.1995@gmail.com' },
   ],
   skills: [
-    { group: 'Languages', items: ['Python', 'C++/C', 'R', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
+    { group: 'Languages', items: ['Python', 'C++/C', 'C#/.NET', 'R', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS'] },
     { group: 'Tools', items: ['Git', 'Linux', 'Subversion', 'Jenkins', 'Matlab', 'Mathematica', 'Photoshop', 'Powershell'] },
   ],
   formspree: 'https://formspree.io/f/xpzbwoql',
