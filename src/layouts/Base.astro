@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import { profile } from '../data/profile';
+
+interface Props { title?: string; description?: string }
+const { title, description = `${profile.name} – ${profile.title}` } = Astro.props;
+const fullTitle = title ? `${title} · ${profile.name}` : profile.name;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contact', label: 'Contact' },
+];
+const active = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/img/favicon.ico" />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{profile.name}</a>
+      <nav aria-label="Main">
+        {nav.map((n) => <a href={n.href} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}
+      </nav>
+    </header>
+    <main class="container"><slot /></main>
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} {profile.name}</p>
+    </footer>
+  </body>
+</html>

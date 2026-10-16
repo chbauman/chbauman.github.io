@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import Entry from '../components/Entry.astro';
+import { profile, work, education } from '../data/profile';
+---
+<Base title="About">
+  <h1>About</h1>
+  <p>{profile.bio}</p>
+  <p class="muted">{profile.location} · <a href={`mailto:${profile.email}`}>{profile.email}</a></p>
+
+  <h2>Work experience</h2>
+  <ul class="entries">{work.map((e) => <Entry {...e} />)}</ul>
+
+  <h2>Education</h2>
+  <ul class="entries">{education.map((e) => <Entry {...e} />)}</ul>
+
+  <h2>Skills</h2>
+  {profile.skills.map((s) => (
+    <p><strong>{s.group}:</strong> {s.items.join(', ')}</p>
+  ))}
+</Base>
