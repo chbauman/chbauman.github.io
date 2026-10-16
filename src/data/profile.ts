@@ -46,7 +46,6 @@ export const projects = [
     title: 'Sudoku Solver & Generator (C++)',
     description:
       'Command-line tools written in modern C++20 to solve sudokus, check whether the solution is unique, and generate puzzles rated by difficulty. Supports other board sizes too.',
-    image: '/img/sudoku-cpp.png',
     links: [{ label: 'Source', href: 'https://github.com/chbauman/sudoku-cpp' }],
   },
   {
