@@ -18,8 +18,9 @@ export const profile = {
   formspree: 'https://formspree.io/f/xpzbwoql',
 };
 
-export const work = [
-  { org: 'Schiller AG', logo: '/img/schiller.jpg', url: 'https://www.schiller.ch/corp/en', role: 'Full-Time Job (ongoing)', description: 'Software engineer signal processing' },
+export const work: { org: string; logo?: string; url: string; role: string; description: string }[] = [
+  { org: 'Solcept AG', url: 'https://www.solcept.ch/de/', role: 'Full-Time Job (ongoing)', description: 'Embedded software engineer' },
+  { org: 'Schiller AG', logo: '/img/schiller.jpg', url: 'https://www.schiller.ch/corp/en', role: 'Full-Time Job', description: 'Software engineer signal processing' },
   { org: 'Empa', logo: '/img/empa.png', url: 'https://www.empa.ch/', role: 'Master thesis', description: 'Data-driven home energy scheduling' },
   { org: 'AGFA Gevaert', logo: '/img/agfa.png', url: 'https://www.agfa.com/', role: 'Internship in R&D', description: 'Image processing using machine learning' },
 ];
