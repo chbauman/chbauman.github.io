@@ -44,7 +44,7 @@ export const projects = [
 
 export const bands: { name: string; url: string; logo?: string; role?: string; description?: string }[] = [
   { name: 'Skapra Zombie', url: 'https://skaprazombie.ch/', logo: '/img/skapra-zombie.jpg', role: 'Trumpet', description: 'Ska-Punk from Zürich' },
-  { name: 'Yono Street Band', url: 'https://yonostreetband.ch/' },
+  { name: 'YONO Streetband', url: 'https://yonostreetband.ch/', logo: '/img/yono-streetband.png', role: 'Trumpet', description: 'Street-Brass from Zürich' },
   { name: 'Bau-Stei', url: 'https://bau-stei.ch/' },
   { name: 'Artrose', url: 'https://artrose.ch/' },
 ];
