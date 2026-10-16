@@ -55,7 +55,7 @@ pre { background: var(--surface); border: 1px solid var(--border); border-radius
 .card h2, .card h3 { margin: 0 0 .25rem; }
 .card p { margin: .5rem 0 0; }
 .entry { display: flex; gap: 1rem; align-items: center; }
-.entry img { flex: none; width: 56px; height: 56px; object-fit: contain; border-radius: 8px; background: #fff; }
+.entry img { flex: none; width: 96px; height: 56px; object-fit: contain; border-radius: 8px; background: #fff; }
 .entry h3 { margin: 0; font-size: 1.05rem; }
 .entry p { margin: 0; }
 
@@ -68,4 +68,4 @@ button { font: inherit; justify-self: start; background: var(--accent); color: #
 
 .thumb { border-radius: var(--radius); margin: 0 0 1rem; }
 .prose h2, .prose h3 { margin-top: 2rem; }
-.entry-logo { flex: none; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--border); color: var(--muted); font-weight: 700; font-size: 1.4rem; }
+.entry-logo { flex: none; width: 96px; height: 56px; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--border); color: var(--muted); font-weight: 700; font-size: 1.4rem; }

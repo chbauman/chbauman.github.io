@@ -3,7 +3,7 @@ interface Props { org: string; logo?: string; url: string; role: string; descrip
 const { org, logo, url, role, description } = Astro.props;
 ---
 <li class="entry">
-  {logo ? <img src={logo} alt="" width="56" height="56" loading="lazy" /> : <span class="entry-logo" aria-hidden="true">{org[0]}</span>}
+  {logo ? <img src={logo} alt="" width="96" height="56" loading="lazy" /> : <span class="entry-logo" aria-hidden="true">{org[0]}</span>}
   <div>
     <h3>{role}</h3>
     <p><a href={url}>{org}</a></p>
