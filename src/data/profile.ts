@@ -53,6 +53,16 @@ export const projects = [
     ],
   },
   {
+    title: 'Swiss Quiz',
+    description:
+      'A geography quiz about Switzerland (rivers, lakes, mountains, passes and more), playable in the browser. The data was scraped from Wikipedia and schweizerfluss.ch with Python.',
+    image: '/img/swiss-geo.png',
+    links: [
+      { label: 'Play', href: 'https://swiss-geo.chrisbaumann.ch/' },
+      { label: 'Source', href: 'https://github.com/chbauman/swiss-geo' },
+    ],
+  },
+  {
     title: 'Sudoku Solver & Generator (C++)',
     description:
       'Command-line tools written in modern C++20 to solve sudokus, check whether the solution is unique, and generate puzzles rated by difficulty. Supports other board sizes too.',
