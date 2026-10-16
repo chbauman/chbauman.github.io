@@ -42,8 +42,8 @@ export const projects = [
   },
 ];
 
-export const bands: { name: string; url: string; role?: string; description?: string }[] = [
-  { name: 'Skaprazombie', url: 'https://skaprazombie.ch/' },
+export const bands: { name: string; url: string; logo?: string; role?: string; description?: string }[] = [
+  { name: 'Skapra Zombie', url: 'https://skaprazombie.ch/', logo: '/img/skapra-zombie.jpg', role: 'Trumpet', description: 'Ska-Punk from Zürich' },
   { name: 'Yono Street Band', url: 'https://yonostreetband.ch/' },
   { name: 'Bau-Stei', url: 'https://bau-stei.ch/' },
   { name: 'Artrose', url: 'https://artrose.ch/' },
