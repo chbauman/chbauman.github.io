@@ -53,7 +53,11 @@ export const projects = [
     title: "Rubik's Sudoku",
     description:
       'A puzzle game: transform one solved sudoku into a second one using only elementary operations (rotating, flipping, swapping rows, columns and numbers) without ever making the sudoku invalid.',
-    links: [{ label: 'Source', href: 'https://github.com/chbauman/rubiks-sudoku' }],
+    image: '/img/rubiks-sudoku.png',
+    links: [
+      { label: 'Play', href: 'https://chrisbaumann.ch/rubiks-sudoku/' },
+      { label: 'Source', href: 'https://github.com/chbauman/rubiks-sudoku' },
+    ],
   },
 ];
 
