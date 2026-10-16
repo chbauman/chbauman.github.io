@@ -49,6 +49,12 @@ export const projects = [
     image: '/img/sudoku-cpp.png',
     links: [{ label: 'Source', href: 'https://github.com/chbauman/sudoku-cpp' }],
   },
+  {
+    title: "Rubik's Sudoku",
+    description:
+      'A puzzle game: transform one solved sudoku into a second one using only elementary operations (rotating, flipping, swapping rows, columns and numbers) without ever making the sudoku invalid.',
+    links: [{ label: 'Source', href: 'https://github.com/chbauman/rubiks-sudoku' }],
+  },
 ];
 
 export const bands: { name: string; url: string; logo?: string; logoBg?: string; role?: string; description?: string }[] = [
