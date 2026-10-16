@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { profile } from '../data/profile';
+---
+<Base title="Contact">
+  <h1>Contact</h1>
+  <form action={profile.formspree} method="POST" class="form">
+    <label>Your name <input type="text" name="name" required /></label>
+    <label>Your email <input type="email" name="_replyto" required /></label>
+    <label>Your message <textarea name="_message" rows="6" required></textarea></label>
+    <button type="submit">Send</button>
+  </form>
+</Base>
