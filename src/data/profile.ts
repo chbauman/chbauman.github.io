@@ -33,12 +33,30 @@ export const education = [
 
 export const projects = [
   {
-    title: 'Sudoku',
-    description: 'A sudoku web app written in TypeScript, with pencil marks, hypotheses and a solver.',
-    image: '/img/posts/screen_sudoku_broad.png',
+    title: 'Hard Sudoku',
+    description:
+      'A sudoku game written in TypeScript, also available as an Android app. Solve even the hardest sudokus by hand with nested guesses (depth-first search), pencil marks, a solve-time history and light/dark mode.',
+    image: '/img/hard-sudoku.png',
     links: [
-      { label: 'Try it', href: 'https://chbauman.github.io/sudoku-ts/' },
-      { label: 'About the app', href: '/sudoku' },
+      { label: 'Play', href: 'https://chrisbaumann.ch/sudoku-ts/' },
+      { label: 'Source', href: 'https://github.com/chbauman/sudoku-ts' },
+    ],
+  },
+  {
+    title: 'Sudoku Solver & Generator (C++)',
+    description:
+      'Command-line tools written in modern C++20 to solve sudokus, check whether the solution is unique, and generate puzzles rated by difficulty. Supports other board sizes too.',
+    image: '/img/sudoku-cpp.png',
+    links: [{ label: 'Source', href: 'https://github.com/chbauman/sudoku-cpp' }],
+  },
+  {
+    title: "Rubik's Sudoku",
+    description:
+      'A puzzle game: transform one solved sudoku into a second one using only elementary operations (rotating, flipping, swapping rows, columns and numbers) without ever making the sudoku invalid.',
+    image: '/img/rubiks-sudoku.png',
+    links: [
+      { label: 'Play', href: 'https://chrisbaumann.ch/rubiks-sudoku/' },
+      { label: 'Source', href: 'https://github.com/chbauman/rubiks-sudoku' },
     ],
   },
 ];
