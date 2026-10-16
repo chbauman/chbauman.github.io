@@ -46,5 +46,5 @@ export const bands: { name: string; url: string; logo?: string; role?: string; d
   { name: 'Skapra Zombie', url: 'https://skaprazombie.ch/', logo: '/img/skapra-zombie.jpg', role: 'Trumpet', description: 'Ska-Punk from Zürich' },
   { name: 'YONO Streetband', url: 'https://yonostreetband.ch/', logo: '/img/yono-streetband.png', role: 'Trumpet', description: 'Street-Brass from Zürich' },
   { name: 'Bau-Stei', url: 'https://bau-stei.ch/' },
-  { name: 'Artrose', url: 'https://artrose.ch/' },
+  { name: 'Art-Rose', url: 'https://artrose.ch/', logo: '/img/art-rose.png', role: 'Euphonium', description: 'Guggenmusik from Thalwil' },
 ];
