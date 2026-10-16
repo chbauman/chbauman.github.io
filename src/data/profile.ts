@@ -42,9 +42,9 @@ export const projects = [
   },
 ];
 
-export const bands: { name: string; url: string; logo?: string; role?: string; description?: string }[] = [
+export const bands: { name: string; url: string; logo?: string; logoBg?: string; role?: string; description?: string }[] = [
   { name: 'Skapra Zombie', url: 'https://skaprazombie.ch/', logo: '/img/skapra-zombie.jpg', role: 'Trumpet', description: 'Ska-Punk from Zürich' },
   { name: 'YONO Streetband', url: 'https://yonostreetband.ch/', logo: '/img/yono-streetband.png', role: 'Trumpet', description: 'Street-Brass from Zürich' },
-  { name: 'Bau-Stei', url: 'https://bau-stei.ch/' },
+  { name: 'Bau Stei Trio', url: 'https://bau-stei.ch/', logo: '/img/bau-stei.png', logoBg: '#161616', role: 'Trumpet', description: 'Trio from Schaffhausen' },
   { name: 'Art-Rose', url: 'https://artrose.ch/', logo: '/img/art-rose.png', role: 'Euphonium', description: 'Guggenmusik from Thalwil' },
 ];

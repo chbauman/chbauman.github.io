@@ -7,7 +7,7 @@ import { bands } from '../data/profile';
   <ul class="cards">
     {bands.map((b) => (
       <li class="card band">
-        {b.logo && <img src={b.logo} alt="" width="96" height="96" loading="lazy" />}
+        {b.logo && <img src={b.logo} alt="" width="96" height="96" loading="lazy" style={b.logoBg ? `background:${b.logoBg}` : undefined} />}
         <div>
           <h2><a href={b.url}>{b.name}</a></h2>
           {b.role && <p class="muted">{b.role}</p>}
