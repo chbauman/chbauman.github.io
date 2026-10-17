@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chrisbaumann.ch/sitemap-index.xml
+Sitemap: https://chrisbaumann.ch/sitemap.xml
