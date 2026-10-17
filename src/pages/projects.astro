@@ -2,12 +2,12 @@
 import Base from '../layouts/Base.astro';
 import { projects } from '../data/profile';
 ---
-<Base title="Projects">
+<Base title="Projects" description="Personal software projects by Christian Baumann: Hard Sudoku, Rubik's Sudoku, Swiss Quiz, a perler bead template creator and a C++ sudoku solver.">
   <h1>Projects</h1>
   <ul class="cards">
     {projects.map((p) => (
       <li class="card">
-        {p.image && <img src={p.image} alt="" class="thumb" loading="lazy" />}
+        {p.image && <img src={p.image} alt={`Screenshot of ${p.title}`} class="thumb" loading="lazy" decoding="async" />}
         <h2>{p.title}</h2>
         <p>{p.description}</p>
         <p class="links">{p.links.map((l) => <a href={l.href}>{l.label}</a>)}</p>

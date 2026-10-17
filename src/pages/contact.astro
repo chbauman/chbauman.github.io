@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { profile } from '../data/profile';
 ---
-<Base title="Contact">
+<Base title="Contact" description="Get in touch with Christian Baumann via the contact form.">
   <h1>Contact</h1>
   <form action={profile.formspree} method="POST" class="form">
     <label>Your name <input type="text" name="name" required /></label>
