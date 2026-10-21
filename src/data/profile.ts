@@ -33,13 +33,13 @@ export const education = [
 
 export const projects = [
   {
-    title: 'Hard Sudoku',
+    title: 'Serious Sudoku',
     description:
-      'A sudoku game written in TypeScript, also available as an Android app. Solve even the hardest sudokus by hand with nested guesses (depth-first search), pencil marks, a solve-time history and light/dark mode.',
-    image: '/img/hard-sudoku.png',
+      'A sudoku game written in TypeScript, also available as an Android app. Solve even the hardest sudokus by hand with nested guesses (depth-first search), pencil marks, seven difficulty levels, a personal solve-time history and light/dark mode.',
+    image: '/img/serious-sudoku.png',
     links: [
-      { label: 'Play', href: 'https://chrisbaumann.ch/sudoku-ts/' },
-      { label: 'Source', href: 'https://github.com/chbauman/sudoku-ts' },
+      { label: 'Play', href: 'https://chrisbaumann.ch/serious-sudoku/' },
+      { label: 'Source', href: 'https://github.com/chbauman/serious-sudoku' },
     ],
   },
   {
