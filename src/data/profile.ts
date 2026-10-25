@@ -35,7 +35,7 @@ export const projects = [
   {
     title: 'Serious Sudoku',
     description:
-      'A sudoku game written in TypeScript, also available as an Android app. Solve even the hardest sudokus by hand with nested guesses (depth-first search), pencil marks, seven difficulty levels, a personal solve-time history and light/dark mode.',
+      'A sudoku game written in TypeScript, also available as an Android app. Solve even the hardest sudokus by hand with nested guesses (depth-first search), pencil marks, seven difficulty levels, a personal solve-time history and light/dark mode. Works offline, no ads, no accounts.',
     image: '/img/serious-sudoku.png',
     links: [
       { label: 'Play', href: 'https://chrisbaumann.ch/serious-sudoku/' },
