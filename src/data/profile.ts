@@ -1,5 +1,6 @@
 export const profile = {
   name: 'Christian Baumann',
+  alternateNames: ['Chris Baumann'],
   title: 'Software Engineer',
   bio: 'Hello there, my name is Chris and this is my personal website.',
   location: 'Switzerland',

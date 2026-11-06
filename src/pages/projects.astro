@@ -8,7 +8,7 @@ import { projects } from '../data/profile';
     {projects.map((p) => (
       <li class="card">
         {p.image && <img src={p.image} alt={`Screenshot of ${p.title}`} class="thumb" loading="lazy" decoding="async" />}
-        <h2>{p.title}</h2>
+        <h2><a href={p.links[0].href}>{p.title}</a></h2>
         <p>{p.description}</p>
         <p class="links">{p.links.map((l) => <a href={l.href}>{l.label}</a>)}</p>
       </li>
