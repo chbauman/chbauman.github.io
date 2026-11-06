@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://chrisbaumann.ch/sitemap.xml
+Sitemap: https://chrisbaumann.ch/serious-sudoku/sitemap.xml
