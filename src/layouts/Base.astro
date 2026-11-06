@@ -11,6 +11,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: profile.name,
+  alternateName: profile.alternateNames,
   jobTitle: profile.title,
   url: Astro.site?.href,
   image: new URL(profile.avatar, Astro.site).href,
